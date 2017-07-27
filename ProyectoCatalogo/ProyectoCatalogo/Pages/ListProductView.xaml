@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoCatalogo.Pages.ListProductView"
+			 Title="Catalogo"
+			 BindingContext="{Binding ListPro, Source={StaticResource Locator}}">
+	<ListView ItemsSource="{Binding ListProducts}">
+		<ListView.ItemTemplate>
+			<DataTemplate>
+				<ViewCell>
+					<StackLayout>
+						<StackLayout.GestureRecognizers>
+							<TapGestureRecognizer Command="{Binding SelectCatalog}" CommandParameter="{Binding}">
+							</TapGestureRecognizer>
+						</StackLayout.GestureRecognizers>
+						<Label Text="{Binding Nombre}" TextColor="{StaticResource TitleProduct}"></Label>
+						<Label Text="{Binding Descripcion}"></Label>
+					</StackLayout>
+				</ViewCell>
+			</DataTemplate>
+		</ListView.ItemTemplate>
+	</ListView>
+</ContentPage>

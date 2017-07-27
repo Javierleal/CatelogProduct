@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:Locator="clr-namespace:ProyectoCatalogo.InstanceLocator;assembly=ProyectoCatalogo"
+             x:Class="ProyectoCatalogo.App">
+	<Application.Resources>
+		<ResourceDictionary>
+			<Color x:Key="TitleProduct">#A9E2F3</Color>
+			<Color x:Key="MenuTop">#848484</Color>
+			<Color x:Key="MenuBack">#0489B1</Color>
+			<Locator:InstanceLocator x:Key="Locator"></Locator:InstanceLocator>
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>
